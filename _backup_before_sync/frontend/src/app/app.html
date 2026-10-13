@@ -1,0 +1,30 @@
+<div class="min-h-screen flex flex-col bg-[var(--bg-main)]">
+  
+  <!-- Navigation Header -->
+  <app-navbar></app-navbar>
+
+  <!-- Main View Area -->
+  <main class="flex-1 pb-16">
+    <app-overview *ngIf="state.activeTab() === 'overview'"></app-overview>
+    <app-datasets *ngIf="state.activeTab() === 'datasets'"></app-datasets>
+    <app-experiment *ngIf="state.activeTab() === 'experiment'"></app-experiment>
+    <app-search *ngIf="state.activeTab() === 'search'"></app-search>
+    <app-comparison *ngIf="state.activeTab() === 'comparison'"></app-comparison>
+  </main>
+
+  <!-- Academic Research Footer -->
+  <footer class="border-t border-[var(--border-subtle)] bg-[#070b13] py-6 px-4 text-center text-xs text-slate-500 font-mono">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div>
+        <strong>Searchable Compression of Cloud/Kubernetes Logs Using LZ78 and Huffman Coding</strong>
+        <span class="block sm:inline sm:ml-2 text-slate-600">&bull; Advanced Data Compression Research Project</span>
+      </div>
+      <div class="flex items-center gap-4 text-[11px] text-slate-400">
+        <span>Backend: FastAPI + Python</span>
+        <span>Frontend: Angular 21 Standalone</span>
+        <span class="text-cyan-400">Selective Block Decompression</span>
+      </div>
+    </div>
+  </footer>
+
+</div>

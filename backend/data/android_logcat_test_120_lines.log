@@ -1,0 +1,120 @@
+10-12 09:00:07.000   2101  3101 I ActivityManager       : Start proc com.example.demo pid=2101
+10-12 09:00:14.000   2102  3102 D InputDispatcher       : Motion event dispatched action=UP pointer=0
+10-12 09:00:21.000   2103  3103 I WindowManager         : Focus changed to com.example.demo/.MainActivity display=0
+10-12 09:00:28.000   2104  3104 D OkHttp                : HTTP request completed method=GET path=/api/items status=200 duration=24ms
+10-12 09:00:35.000   2105  3105 I NetworkSecurityConfig : Using Network Security Config from resource network_security_config
+10-12 09:00:42.000   2106  3106 W ConnectivityService   : Network capabilities changed transport=WIFI validated=false
+10-12 09:00:49.000   2107  3107 I SQLiteDatabase        : Database query completed table=events rows=7 duration=9ms
+10-12 09:00:56.000   2108  3108 D RecyclerView          : Layout pass completed children=16 duration=11ms
+10-12 09:01:03.000   2109  3109 W BatteryStats          : Battery temperature elevated; current=41C
+10-12 09:01:10.000   2110  3110 E PaymentService        : RARE_PAYMENT_FAIL_10: transaction timeout request_id=PAY-0010
+10-12 09:01:17.000   2111  3111 I ActivityManager       : Start proc com.example.demo pid=2111
+10-12 09:01:24.000   2112  3112 D InputDispatcher       : Motion event dispatched action=UP pointer=0
+10-12 09:01:31.000   2113  3113 E DatabaseService       : SQLiteDatabase: database is locked; retrying
+10-12 09:01:38.000   2114  3114 D OkHttp                : HTTP request completed method=GET path=/api/items status=200 duration=34ms
+10-12 09:01:45.000   2115  3115 I NetworkSecurityConfig : Using Network Security Config from resource network_security_config
+10-12 09:01:52.000   2116  3116 W ConnectivityService   : Network capabilities changed transport=WIFI validated=false
+10-12 09:01:59.000   2117  3117 W OkHttp                : HTTP 503 from api.example.test; retry scheduled in 2s
+10-12 09:02:06.000   2118  3118 W BatteryStats          : Battery temperature elevated; current=41C
+10-12 09:02:13.000   2119  3119 I PowerManager          : Device idle state updated idle=false
+10-12 09:02:20.000   2120  3120 D Choreographer         : Skipped frames check frame_time=12ms
+10-12 09:02:27.000   2121  3121 I ActivityManager       : Start proc com.example.demo pid=2121
+10-12 09:02:34.000   2122  3122 D InputDispatcher       : Motion event dispatched action=UP pointer=0
+10-12 09:02:41.000   2123  3123 I WindowManager         : Focus changed to com.example.demo/.MainActivity display=0
+10-12 09:02:48.000   2124  3124 D OkHttp                : HTTP request completed method=GET path=/api/items status=200 duration=44ms
+10-12 09:02:55.000   2125  3125 E AuthService           : RARE_AUTH_FAILURE_25: invalid token user_id=user_25
+10-12 09:03:02.000   2126  3126 E DatabaseService       : SQLiteDatabase: database is locked; retrying
+10-12 09:03:09.000   2127  3127 W BatteryStats          : Battery temperature elevated; current=41C
+10-12 09:03:16.000   2128  3128 D RecyclerView          : Layout pass completed children=21 duration=7ms
+10-12 09:03:23.000   2129  3129 I PowerManager          : Device idle state updated idle=false
+10-12 09:03:30.000   2130  3130 D Choreographer         : Skipped frames check frame_time=12ms
+10-12 09:03:37.000   2131  3131 I ActivityManager       : Start proc com.example.demo pid=2131
+10-12 09:03:44.000   2132  3132 D InputDispatcher       : Motion event dispatched action=UP pointer=0
+10-12 09:03:51.000   2133  3133 I WindowManager         : Focus changed to com.example.demo/.MainActivity display=0
+10-12 09:03:58.000   2134  3134 W OkHttp                : HTTP 503 from api.example.test; retry scheduled in 2s
+10-12 09:04:05.000   2135  3135 I NetworkSecurityConfig : Using Network Security Config from resource network_security_config
+10-12 09:04:12.000   2136  3136 W BatteryStats          : Battery temperature elevated; current=41C
+10-12 09:04:19.000   2137  3137 I SQLiteDatabase        : Database query completed table=events rows=1 duration=19ms
+10-12 09:04:26.000   2138  3138 D RecyclerView          : Layout pass completed children=16 duration=5ms
+10-12 09:04:33.000   2139  3139 E DatabaseService       : SQLiteDatabase: database is locked; retrying
+10-12 09:04:40.000   2140  3140 D Choreographer         : Skipped frames check frame_time=12ms
+10-12 09:04:47.000   2141  3141 I ActivityManager       : Start proc com.example.demo pid=2141
+10-12 09:04:54.000   2142  3142 D InputDispatcher       : Motion event dispatched action=UP pointer=0
+10-12 09:05:01.000   2143  3143 I WindowManager         : Focus changed to com.example.demo/.MainActivity display=0
+10-12 09:05:08.000   2144  3144 D OkHttp                : HTTP request completed method=GET path=/api/items status=200 duration=64ms
+10-12 09:05:15.000   2145  3145 W BatteryStats          : Battery temperature elevated; current=41C
+10-12 09:05:22.000   2146  3146 W ConnectivityService   : Network capabilities changed transport=WIFI validated=false
+10-12 09:05:29.000   2147  3147 I SQLiteDatabase        : Database query completed table=events rows=11 duration=9ms
+10-12 09:05:36.000   2148  3148 D RecyclerView          : Layout pass completed children=11 duration=3ms
+10-12 09:05:43.000   2149  3149 I PowerManager          : Device idle state updated idle=false
+10-12 09:05:50.000   2150  3150 W StorageManager        : BOUNDARY_MARKER_BLOCK_1_END: cache directory almost full
+10-12 09:05:57.000   2151  3151 E StorageManager        : BOUNDARY_MARKER_BLOCK_2_START: disk write failed errno=28
+10-12 09:06:04.000   2152  3152 E DatabaseService       : SQLiteDatabase: database is locked; retrying
+10-12 09:06:11.000   2153  3153 I WindowManager         : Focus changed to com.example.demo/.MainActivity display=0
+10-12 09:06:18.000   2154  3154 W BatteryStats          : Battery temperature elevated; current=41C
+10-12 09:06:25.000   2155  3155 I NetworkSecurityConfig : Using Network Security Config from resource network_security_config
+10-12 09:06:32.000   2156  3156 W ConnectivityService   : Network capabilities changed transport=WIFI validated=false
+10-12 09:06:39.000   2157  3157 I SQLiteDatabase        : Database query completed table=events rows=9 duration=19ms
+10-12 09:06:46.000   2158  3158 D RecyclerView          : Layout pass completed children=21 duration=13ms
+10-12 09:06:53.000   2159  3159 I PowerManager          : Device idle state updated idle=false
+10-12 09:07:00.000   2160  3160 E PaymentService        : RARE_PAYMENT_FAIL_60: transaction timeout request_id=PAY-0060
+10-12 09:07:07.000   2161  3161 I ActivityManager       : Start proc com.example.demo pid=2161
+10-12 09:07:14.000   2162  3162 D InputDispatcher       : Motion event dispatched action=UP pointer=0
+10-12 09:07:21.000   2163  3163 W BatteryStats          : Battery temperature elevated; current=41C
+10-12 09:07:28.000   2164  3164 D OkHttp                : HTTP request completed method=GET path=/api/items status=200 duration=84ms
+10-12 09:07:35.000   2165  3165 E DatabaseService       : SQLiteDatabase: database is locked; retrying
+10-12 09:07:42.000   2166  3166 W ConnectivityService   : Network capabilities changed transport=WIFI validated=false
+10-12 09:07:49.000   2167  3167 I SQLiteDatabase        : Database query completed table=events rows=7 duration=9ms
+10-12 09:07:56.000   2168  3168 W OkHttp                : HTTP 503 from api.example.test; retry scheduled in 2s
+10-12 09:08:03.000   2169  3169 I PowerManager          : Device idle state updated idle=true
+10-12 09:08:10.000   2170  3100 D Choreographer         : Skipped frames check frame_time=12ms
+10-12 09:08:17.000   2171  3101 I ActivityManager       : Start proc com.example.demo pid=2171
+10-12 09:08:24.000   2172  3102 W BatteryStats          : Battery temperature elevated; current=41C
+10-12 09:08:31.000   2173  3103 I WindowManager         : Focus changed to com.example.demo/.MainActivity display=0
+10-12 09:08:38.000   2174  3104 D OkHttp                : HTTP request completed method=GET path=/api/items status=200 duration=94ms
+10-12 09:08:45.000   2175  3105 E AuthService           : RARE_AUTH_FAILURE_75: invalid token user_id=user_75
+10-12 09:08:52.000   2176  3106 W ConnectivityService   : Network capabilities changed transport=WIFI validated=false
+10-12 09:08:59.000   2177  3107 I SQLiteDatabase        : Database query completed table=events rows=5 duration=19ms
+10-12 09:09:06.000   2178  3108 E DatabaseService       : SQLiteDatabase: database is locked; retrying
+10-12 09:09:13.000   2179  3109 I PowerManager          : Device idle state updated idle=false
+10-12 09:09:20.000   2100  3110 D Choreographer         : Skipped frames check frame_time=12ms
+10-12 09:09:27.000   2101  3111 W BatteryStats          : Battery temperature elevated; current=41C
+10-12 09:09:34.000   2102  3112 D InputDispatcher       : Motion event dispatched action=UP pointer=0
+10-12 09:09:41.000   2103  3113 I WindowManager         : Focus changed to com.example.demo/.MainActivity display=0
+10-12 09:09:48.000   2104  3114 D OkHttp                : HTTP request completed method=GET path=/api/items status=200 duration=104ms
+10-12 09:09:55.000   2105  3115 W OkHttp                : HTTP 503 from api.example.test; retry scheduled in 2s
+10-12 09:10:02.000   2106  3116 W ConnectivityService   : Network capabilities changed transport=WIFI validated=false
+10-12 09:10:09.000   2107  3117 I SQLiteDatabase        : Database query completed table=events rows=3 duration=9ms
+10-12 09:10:16.000   2108  3118 D RecyclerView          : Layout pass completed children=21 duration=7ms
+10-12 09:10:23.000   2109  3119 I PowerManager          : Device idle state updated idle=false
+10-12 09:10:30.000   2110  3120 E CrashHandler          : CRASH_TEST_MARKER: NullPointerException at MainActivity.onCreate
+10-12 09:10:37.000   2111  3121 E DatabaseService       : SQLiteDatabase: database is locked; retrying
+10-12 09:10:44.000   2112  3122 D InputDispatcher       : Motion event dispatched action=UP pointer=0
+10-12 09:10:51.000   2113  3123 I WindowManager         : Focus changed to com.example.demo/.MainActivity display=0
+10-12 09:10:58.000   2114  3124 D OkHttp                : HTTP request completed method=GET path=/api/items status=200 duration=24ms
+10-12 09:11:05.000   2115  3125 I NetworkSecurityConfig : Using Network Security Config from resource network_security_config
+10-12 09:11:12.000   2116  3126 W ConnectivityService   : Network capabilities changed transport=WIFI validated=false
+10-12 09:11:19.000   2117  3127 I SQLiteDatabase        : Database query completed table=events rows=1 duration=19ms
+10-12 09:11:26.000   2118  3128 D RecyclerView          : Layout pass completed children=16 duration=5ms
+10-12 09:11:33.000   2119  3129 W BatteryStats          : Battery temperature elevated; current=41C
+10-12 09:11:40.000   2120  3130 D Choreographer         : Skipped frames check frame_time=12ms
+10-12 09:11:47.000   2121  3131 I ActivityManager       : Start proc com.example.demo pid=2121
+10-12 09:11:54.000   2122  3132 W OkHttp                : HTTP 503 from api.example.test; retry scheduled in 2s
+10-12 09:12:01.000   2123  3133 I WindowManager         : Focus changed to com.example.demo/.MainActivity display=0
+10-12 09:12:08.000   2124  3134 E DatabaseService       : SQLiteDatabase: database is locked; retrying
+10-12 09:12:15.000   2125  3135 I NetworkSecurityConfig : Using Network Security Config from resource network_security_config
+10-12 09:12:22.000   2126  3136 W ConnectivityService   : Network capabilities changed transport=WIFI validated=false
+10-12 09:12:29.000   2127  3137 I SQLiteDatabase        : Database query completed table=events rows=11 duration=9ms
+10-12 09:12:36.000   2128  3138 W BatteryStats          : Battery temperature elevated; current=41C
+10-12 09:12:43.000   2129  3139 I PowerManager          : Device idle state updated idle=false
+10-12 09:12:50.000   2130  3140 E PaymentService        : RARE_PAYMENT_FAIL_110: transaction timeout request_id=PAY-0110
+10-12 09:12:57.000   2131  3141 I ActivityManager       : Start proc com.example.demo pid=2131
+10-12 09:13:04.000   2132  3142 D InputDispatcher       : Motion event dispatched action=UP pointer=0
+10-12 09:13:11.000   2133  3143 I WindowManager         : Focus changed to com.example.demo/.MainActivity display=0
+10-12 09:13:18.000   2134  3144 D OkHttp                : HTTP request completed method=GET path=/api/items status=200 duration=44ms
+10-12 09:13:25.000   2135  3145 I NetworkSecurityConfig : Using Network Security Config from resource network_security_config
+10-12 09:13:32.000   2136  3146 W ConnectivityService   : Network capabilities changed transport=WIFI validated=false
+10-12 09:13:39.000   2137  3147 E DatabaseService       : SQLiteDatabase: database is locked; retrying
+10-12 09:13:46.000   2138  3148 D RecyclerView          : Layout pass completed children=21 duration=13ms
+10-12 09:13:53.000   2139  3149 W OkHttp                : HTTP 503 from api.example.test; retry scheduled in 2s
+10-12 09:14:00.000   2140  3150 D Choreographer         : Skipped frames check frame_time=12ms

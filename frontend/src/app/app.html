@@ -1,0 +1,14 @@
+<div class="flex flex-col" style="min-height: 100vh; background-color: var(--bg-app);">
+  
+  <!-- Top Navigation Header -->
+  <app-navbar></app-navbar>
+
+  <!-- Main View Container -->
+  <main class="flex-1">
+    <app-overview *ngIf="state.activeTab() === 'home'"></app-overview>
+    <app-datasets *ngIf="state.activeTab() === 'upload'"></app-datasets>
+    <app-search *ngIf="state.activeTab() === 'search'"></app-search>
+    <app-comparison *ngIf="state.activeTab() === 'results'"></app-comparison>
+  </main>
+
+</div>
