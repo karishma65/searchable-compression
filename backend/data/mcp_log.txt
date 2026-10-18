@@ -1,0 +1,78 @@
+
+MCP IMPLEMENTATION LOG
+
+Started implementation of a local Model Context Protocol (MCP) based offline RAG architecture.
+
+1. Package Installation
+Installed required packages:
+- mcp
+- fastapi
+- uvicorn
+
+Optional:
+- requests
+- python-dotenv
+
+2. MCP Architecture
+Implemented two major components:
+
+- MCP RAG Server
+- Local Agent Orchestrator
+
+Communication performed over stdio transport.
+
+3. MCP Server
+Created a FastMCP compliant server.
+
+Responsibilities:
+- document chunk indexing
+- embedding management
+- similarity retrieval
+- tool exposure
+
+4. Tool Registration
+Registered MCP tools such as:
+- ask_question
+- validate_sql
+- execute_sql
+- search_schema
+
+5. Resource Exposure
+Exposed schema and contextual resources through MCP resource handlers.
+
+6. Local Agent Orchestrator
+Implemented a lightweight client that:
+- discovers tools
+- parses tool schemas
+- routes user requests
+- forwards tool calls
+- redirects results back to the model
+
+7. Tool Calling Logic
+Since deepseek-coder:6.7b lacked native tool-calling support,
+implemented prompt-based JSON routing.
+
+8. Stdio Corruption Fix
+Redirected print() debug logs to stderr to avoid corruption of MCP JSON packets.
+
+9. Model Alignment Mitigation
+Added system prompts forcing the model to answer only from tool results.
+
+10. Inference Latency Fix
+Increased Ollama timeout from default values to 180 seconds for local CPU execution.
+
+11. MCP Verification
+Verified:
+- MCP server startup
+- tool discovery
+- tool invocation
+- successful RAG grounding
+
+12. Final Workflow
+User Query
+-> MCP Tool Discovery
+-> Tool Routing
+-> Context Retrieval
+-> Tool Execution
+-> Result Injection
+-> Final LLM Response

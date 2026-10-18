@@ -124,7 +124,7 @@ import { BlockGridComponent } from '../block-grid/block-grid.component';
                 <!-- Proposed Method -->
                 <tr style="background: #eff6ff;">
                   <td style="font-weight: 700; color: #2563eb; font-family: var(--font-main);">
-                    Proposed (Block LZ78 + Huffman + Index)
+                    Proposed: Gain-Gated Shared-Dictionary Block DEFLATE
                   </td>
                   <td style="font-weight: 700; color: #059669;">
                     {{ formatBytes(searchData.search_results.bytes_decoded) }} ({{ searchData.search_results.data_read_pct }}% of original)
@@ -142,9 +142,11 @@ import { BlockGridComponent } from '../block-grid/block-grid.component';
                   </td>
                 </tr>
 
-                <!-- Standard Gzip -->
-                <tr *ngFor="let m of getGzipComparison()">
-                  <td style="font-weight: 700; color: #0f172a; font-family: var(--font-main);">Standard Gzip</td>
+                <!-- Worst Baseline: Run-Length Encoding (RLE) -->
+                <tr *ngFor="let m of getRleComparison()">
+                  <td style="font-weight: 700; color: #dc2626; font-family: var(--font-main);">
+                    {{ m.method }}
+                  </td>
                   <td>{{ formatBytes(m.data_decoded_bytes) }} (100.0% of original)</td>
                   <td>{{ m.blocks_decoded }} decoded &bull; 0 skipped</td>
                   <td>{{ m.search_latency_ms }} ms</td>
@@ -330,8 +332,8 @@ export class SearchComponent implements OnInit {
     });
   }
 
-  getGzipComparison() {
-    return this.searchData?.comparison?.methods.filter(m => m.method.toLowerCase().includes('gzip')) || [];
+  getRleComparison() {
+    return this.searchData?.comparison?.methods.filter(m => m.method.toLowerCase().includes('rle') || m.method.toLowerCase().includes('worst') || m.method.toLowerCase().includes('gzip')) || [];
   }
 
   getRawComparison() {

@@ -11,7 +11,7 @@ echo [1/3] Ensuring ports 8000 and 4200 are free...
 powershell -NoProfile -Command "Get-NetTCPConnection -LocalPort 8000, 4200 -State Listen -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -ErrorAction SilentlyContinue }; exit 0" >nul 2>&1
 
 echo [2/3] Launching Python FastAPI Backend...
-start "K8s Log Compression - FastAPI Backend" cmd /k "cd /d ""%~dp0"" && python -m uvicorn backend.main:app --host 127.0.0.1 --port 8000 --reload"
+start "K8s Log Compression - FastAPI Backend" cmd /k "cd /d ""%~dp0"" && (if exist "".venv\Scripts\activate.bat"" call "".venv\Scripts\activate.bat"") && python -m uvicorn backend.main:app --host 127.0.0.1 --port 8000 --reload"
 
 timeout /t 2 /nobreak >nul
 

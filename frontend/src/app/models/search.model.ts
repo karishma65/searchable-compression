@@ -40,7 +40,8 @@ export interface SearchMethodComparisonItem {
 
 export interface SearchComparison {
   methods: SearchMethodComparisonItem[];
-  latency_speedup_vs_gzip: number;
+  latency_speedup_vs_baseline?: number;
+  latency_speedup_vs_gzip?: number;
   bytes_decoded_reduction_pct: number;
 }
 

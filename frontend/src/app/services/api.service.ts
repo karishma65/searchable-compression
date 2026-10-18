@@ -2,7 +2,7 @@ import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { DatasetSummary, CompressionMethodMeta } from '../models/dataset.model';
-import { ExperimentRecord, BlockSizeTradeoffResponse } from '../models/compression.model';
+import { ExperimentRecord, BlockSizeTradeoffResponse, GainGateEvaluationsResponse } from '../models/compression.model';
 import { SearchResponse } from '../models/search.model';
 
 @Injectable({
@@ -69,6 +69,12 @@ export class ApiService {
   getBlockSizeTradeoff(datasetName: string): Observable<BlockSizeTradeoffResponse> {
     return this.http.get<BlockSizeTradeoffResponse>(
       `${this.baseUrl}/metrics/block-size-tradeoff?dataset_name=${encodeURIComponent(datasetName)}`
+    );
+  }
+
+  getGainGateEvaluations(datasetName: string, blockSize: number = 100): Observable<GainGateEvaluationsResponse> {
+    return this.http.get<GainGateEvaluationsResponse>(
+      `${this.baseUrl}/gain-gate/evaluations?dataset_name=${encodeURIComponent(datasetName)}&block_size=${blockSize}`
     );
   }
 }

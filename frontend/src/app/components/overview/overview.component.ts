@@ -21,8 +21,8 @@ import { StateService } from '../../services/state.service';
             </h1>
 
             <p class="lead-text" style="color: #475569; font-size: 1.05rem;">
-              Compress cloud log files into discrete blocks using LZ78 and Huffman algorithms with an inverted search index.
-              Search for specific log errors by decoding only matching blocks instead of decompressing the entire archive.
+              Compress cloud log files into discrete blocks using Gain-Gated Shared-Dictionary Block DEFLATE with integrated search indexing.
+              Our cost-aware algorithm evaluates marginal compression gains G(p | S) &gt; 0 to eliminate the small-block cold-start penalty while decoding only candidate blocks during searches.
             </p>
 
             <!-- Action Buttons -->
@@ -104,7 +104,7 @@ import { StateService } from '../../services/state.service';
               <span style="font-size: 0.8125rem; font-weight: 700; color: #7c3aed;">STEP 3</span>
               <h3 class="heading-sub" style="font-size: 1.1rem; margin-top: 0.25rem;">View Results</h3>
               <p class="text-xs text-muted" style="margin-top: 0.35rem; line-height: 1.6;">
-                Review matching records, space saved, and search efficiency against standard Gzip.
+                Review matching records, space saved, and search efficiency against worst-case baseline (RLE) and sequential scans.
               </p>
             </div>
 

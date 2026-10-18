@@ -1,0 +1,64 @@
+
+RAG PIPELINE IMPLEMENTATION LOG
+
+Started implementation of a local Retrieval-Augmented Generation (RAG) pipeline.
+
+1. Environment Setup
+Created a custom .env loader instead of using external dotenv libraries.
+
+2. PDF Processing
+Used pypdf to load and extract text from PDF documents.
+
+3. Text Chunking
+Implemented overlapping chunk generation:
+- Chunk Size: 500
+- Overlap: 100
+
+This was done to preserve semantic continuity across chunks.
+
+4. Embedding Generation
+Generated vector embeddings for every chunk using the embedding model.
+
+Stored:
+- chunk text
+- embedding vector
+
+inside the vector store.
+
+5. Query Processing
+Accepted dynamic user queries and converted them into embeddings using the same embedding model.
+
+6. Similarity Search
+Implemented cosine similarity manually to compare:
+- query embeddings
+- stored chunk embeddings
+
+7. Retrieval
+Sorted similarity scores and retrieved top relevant chunks.
+
+8. Prompt Augmentation
+Constructed the final prompt using:
+- retrieved context
+- original user query
+
+9. LLM Integration
+Sent the augmented prompt to the local model endpoint using streaming enabled requests.
+
+10. Streaming Response Handling
+Processed model output token-by-token using streamed JSON responses.
+
+11. Final Response Generation
+Combined all streamed tokens into the final generated response.
+
+12. Overall Pipeline Flow
+PDF Input
+-> Text Extraction
+-> Chunking
+-> Embedding Generation
+-> Vector Storage
+-> Query Embedding
+-> Similarity Search
+-> Top-K Retrieval
+-> Prompt Construction
+-> LLM Streaming
+-> Final Response
